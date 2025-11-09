@@ -1,6 +1,13 @@
+#Screen Setup
 SCREEN_WIDTH = 1280
 SCREEN_HEIGHT = 720
+
+#Asteroid Setup
 ASTEROID_MIN_RADIUS = 20
 ASTEROID_KINDS = 3
 ASTEROID_SPAWN_RATE_SECONDS = 0.8
 ASTEROID_MAX_RADIUS = ASTEROID_MIN_RADIUS * ASTEROID_KINDS
+
+#Player Setup
+PLAYER_RADIUS = 20  #(the radius of the player's ship)
+LINE_WIDTH = 2      #(the width of the lines that draw the player's ship
