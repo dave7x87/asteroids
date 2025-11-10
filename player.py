@@ -16,7 +16,10 @@ class Player(CircleShape):
         return [a, b, c]
 
     def draw(self, screen):
-        pygame.draw.polygon(screen, "white", self.triangle(), LINE_WIDTH)
+        pts = self.triangle()  # list of Vector2 with floats
+        pts_int = [(int(p.x), int(p.y)) for p in pts]  # quantize to pixels
+
+        pygame.draw.polygon(screen, "white", pts_int, LINE_WIDTH)
 
     def rotate(self, dt):
         self.rotation += PLAYER_TURN_SPEED * dt

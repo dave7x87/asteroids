@@ -9,5 +9,8 @@ wheels/
 # Virtual environments
 .venv
 
+#bundler for Boots
+bundle*.*
+
 # Project specific
 game_state.jsonl
