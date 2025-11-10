@@ -20,7 +20,6 @@ class Player(CircleShape):
         pts_int = [(int(p.x), int(p.y)) for p in pts]  # quantize to pixels
 
         pygame.draw.polygon(screen, "white", pts_int, LINE_WIDTH)
-
     def rotate(self, dt):
         self.rotation += PLAYER_TURN_SPEED * dt
 
